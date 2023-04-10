@@ -136,10 +136,6 @@ def remove_duplicates(lst):
 
 # 14. Write a function to find the list of words that are longer than n from a given list of words.
 def find_long_words(words, n):
-    """
-    This function takes a list of words and a length 'n' as input and returns a list of all words in the input list
-    that are longer than 'n'.
-    """
     result = []
     for word in words:
         if len(word) > n:
