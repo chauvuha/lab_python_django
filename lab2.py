@@ -5,7 +5,7 @@ import asyncio
 
 # 1. Write a function to break a list into evenly sized chunks and
 # calculate the sum of all sub-lists in parallel and write the results
-# to a file named output.txt . Remember to keep the order of the
+# to a file named output.txt. Remember to keep the order of the
 # sub-lists in the output file.
 def sum_chunks(lst, chunk_size, output_filename):
     chunks = [lst[i:i+chunk_size] for i in range(0, len(lst), chunk_size)]
