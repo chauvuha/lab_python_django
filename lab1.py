@@ -101,7 +101,20 @@ def longest_word_length(word_list):
     
     return max_length
 
-# 11. Write a function to concatenate following dictionaries to create a new one.
+#11. Write a function that sort a dictionary descending/ ascending by value
+def sort_dict_by_value_descending(dictionary):
+    sorted_dict = dict(sorted(dictionary.items(), key=lambda x: x[1], reverse=True))
+    return sorted_dict
+
+def sort_dict_by_value_ascending(dictionary):
+    sorted_dict = dict(sorted(dictionary.items(), key=lambda x: x[1]))
+    return sorted_dict
+
+my_dict = {'a': 3, 'b': 1, 'c': 2}
+sorted_dict = sort_dict_by_value_ascending(my_dict)
+print(sorted_dict)
+
+# 12. Write a function to concatenate following dictionaries to create a new one.
 def concatenate_dicts(dicts_list):
     result = {}
     for d in dicts_list:
