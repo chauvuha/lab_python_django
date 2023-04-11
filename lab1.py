@@ -30,9 +30,6 @@ def get_largest_number(numbers):
 
 # 4. Write a function to get the smallest number from a list.
 def get_smallest_number(numbers):
-    """
-    This function takes a list of numbers as input and returns the smallest number in the list.
-    """
     smallest = None
     for num in numbers:
         if smallest is None or num < smallest:
@@ -83,27 +80,23 @@ def swap_first_two_chars(str1, str2):
     str1_swapped = str2[:2] + str1[2:]
     str2_swapped = str1[:2] + str2[2:]
     
-    # concatenate the two modified strings with a space between them
     result = str1_swapped + ' ' + str2_swapped
-    
     return result
 
 # 9. Write a function to add 'ing' at the end of a given string (length should be at least 3). If the given string is already ends with 'ing' then add 'ly' instead. If the string length of the given string is less than 3, leave it unchanged.  
 def add_ing_or_ly(s):
-    if len(s) < 3:  # if the string length is less than 3, leave it unchanged
+    if len(s) < 3: 
         return s
-    
-    if s[-3:] == 'ing':  # if the string already ends with 'ing', add 'ly' instead
+    if s[-3:] == 'ing': 
         return s + 'ly'
-    
-    return s + 'ing'  # otherwise, add 'ing' at the end
+    return s + 'ing'  
 
 # 10. Write a function that takes a list of words and returns the length of the longest one.
 def longest_word_length(word_list):
-    max_length = 0  # initialize the maximum length to 0
+    max_length = 0 
     
     for word in word_list:
-        if len(word) > max_length:  # if the length of the current word is greater than the current maximum, update the maximum
+        if len(word) > max_length:
             max_length = len(word)
     
     return max_length
