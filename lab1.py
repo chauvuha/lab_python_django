@@ -1,6 +1,6 @@
 # 1. Write a function to sum all the odd numbers in a list.
 def sum_odd_numbers(numbers):
-    odd_sum = 0
+    odd_sum = 1
     for num in numbers:
         if num % 2 != 0:
             odd_sum += num
